@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp play"
+    "start": "gulp play",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,8 @@
     "jwt-decode": "~1.1.0",
     "systemjs": "~0.16.10",
     "whatwg-fetch": "~0.7.0",
-    "when": "~3.7.3"
-  }
+    "when": "~3.7.3",
+    "snyk": "^1.105.0"
+  },
+  "snyk": true
 }
